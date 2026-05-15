@@ -1,0 +1,197 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+/* HEADER */
+
+header{
+  background:#111827;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+  position:sticky;
+  top:0;
+}
+
+header h1{
+  color:#38bdf8;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h2{
+  font-size:55px;
+}
+
+.hero span{
+  color:#38bdf8;
+}
+
+.hero p{
+  margin-top:15px;
+  max-width:700px;
+  line-height:1.7;
+  color:#cbd5e1;
+}
+
+button{
+  margin-top:25px;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  background:#38bdf8;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:white;
+}
+
+/* SECTION TITLE */
+
+.title{
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+  color:#38bdf8;
+}
+
+/* ABOUT */
+
+#about{
+  padding:80px 8%;
+}
+
+.about-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.about-container img{
+  width:250px;
+  border-radius:20px;
+  border:4px solid #38bdf8;
+}
+
+.about-text{
+  max-width:600px;
+}
+
+.about-text p{
+  margin-top:15px;
+  line-height:1.8;
+}
+
+/* SKILLS */
+
+#skills{
+  padding:80px 8%;
+}
+
+.skills-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+}
+
+.skill-box{
+  background:#1e293b;
+  padding:35px;
+  text-align:center;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.skill-box:hover{
+  transform:translateY(-10px);
+}
+
+/* PROJECTS */
+
+#projects{
+  padding:80px 8%;
+}
+
+.project-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.project-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.project-card:hover{
+  transform:scale(1.03);
+}
+
+/* CONTACT */
+
+#contact{
+  padding:80px 8%;
+  text-align:center;
+}
+
+.contact-box p{
+  margin:10px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#111827;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero h2{
+    font-size:38px;
+  }
+
+  nav{
+    display:none;
+  }
+}
